@@ -1,14 +1,21 @@
+import "./app.scss";
 import Top from "./components/top/top";
-import intro from "./components/intro/intro"
+import Intro from "./components/intro/intro";
+import Portfolio from "./components/portfolio/portfolio";
+import Work from "./components/work/work";
+import Contact from "./components/contact/contact";
+
+
 
 function App() {
   return (
     <div className="app">
       <Top/>
-      \<div className="sections">
+      <div className="sections">
         <Intro/>
         <Portfolio/>
         <Work/>
+        <Contact/>
       </div>
     </div>
   );
