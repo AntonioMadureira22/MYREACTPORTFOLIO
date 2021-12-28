@@ -1,9 +1,9 @@
 import "./top.scss"
 import {Code, Email} from "@material-ui/icons"
 
-export default function Top() {
+export default function Top({ menuOpen, setMenuOpen}) {
     return (
-        <div className="top">
+        <div className={"top " + (menuOpen && "active")}>
             <div className="wrapper">
                <div className="left">
                     <a href="#intro" className="logo">apex</a>
@@ -17,7 +17,11 @@ export default function Top() {
                     </div>
                 </div>
                 <div className="right">
-                    
+                    <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
+                        <span>className="line1"</span>
+                        <span>className="line2"</span>
+                        <span>className="line3"</span>
+                    </div>
                 </div>
             </div>
         </div>
