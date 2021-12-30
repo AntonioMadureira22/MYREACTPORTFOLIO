@@ -2,10 +2,7 @@ import "./top.scss"
 import {Code, Email, GitHub} from "@material-ui/icons"
 
 export default function Top({ menuOpen, setMenuOpen}) {
-    <GitHub onClick={handlePageChange} />
-    const handlePageChange() => {
-        window.location.href="https://github.com/AntonioMadureira22"
-        }
+    <GitHub onClick={event =>  window.location.href='https://github.com/AntonioMadureira22'} />
     return (
         <div className={"top " + (menuOpen && "active")}>
             <div className="wrapper">
