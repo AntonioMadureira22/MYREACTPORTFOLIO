@@ -1,3 +1,5 @@
+import { Link } from "@material-ui/core";
+
 export const featuredPortfolio = [
     {
         id: 1,
@@ -25,7 +27,7 @@ export const webPortfolio = [
     {
         id: 3,
         title: "Noteify",
-        image: "images/note.png"
+        image: "images/note.png",
     }
 ];
 

@@ -1,7 +1,11 @@
 import "./top.scss"
-import {Code, Email} from "@material-ui/icons"
+import {Code, Email, GitHub} from "@material-ui/icons"
 
 export default function Top({ menuOpen, setMenuOpen}) {
+    <GitHub onClick={handlePageChange} />
+    const handlePageChange() => {
+        window.location.href="https://github.com/AntonioMadureira22"
+        }
     return (
         <div className={"top " + (menuOpen && "active")}>
             <div className="wrapper">
@@ -14,6 +18,10 @@ export default function Top({ menuOpen, setMenuOpen}) {
                     <div className="itemContainer">
                         <Email className="icon"/>
                         <span>antonio.madureira2222@gmail.com</span>
+                    </div>
+                    <div className="itemContainer">
+                        <GitHub className="icon"/>
+                        <span>AntonioMadureira22</span>
                     </div>
                 </div>
                 <div className="right">
