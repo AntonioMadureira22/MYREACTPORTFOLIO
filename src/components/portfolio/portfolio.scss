@@ -1,5 +1,5 @@
 .portfolio{
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +34,7 @@
             position: relative;
             transition: all .5s ease;
             cursor: pointer;
+            overflow: hidden;
 
             h3{
                 position: absolute;
@@ -44,6 +45,7 @@
                 height: 100%;
                 object-fit: cover;
                 z-index: 1;
+                overflow: hidden;
             }
             &:hover{
                 background-color: #5252ff;

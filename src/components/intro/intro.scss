@@ -8,9 +8,11 @@
         .imgContainer{
             width: 700px;
             height: 700px;
+            overflow: hidden;
 
             img{
                 width: 70%;
+                overflow: hidden;
             }
         }
     }
